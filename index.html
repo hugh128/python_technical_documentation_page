@@ -12,22 +12,139 @@
     <header class="header">
         <nav class="nav nav--top">
             <figure class="nav__img">
-                <img class="nav__icon" src="icons/python.svg" alt="Python icon">
+                <img class="nav__icon" src="icons/python_icon.svg" alt="Python icon">
             </figure>
             <h1 class="title">Documentación de Python</h1>
         </nav>
         <nav class="nav nav--left">
-            <h1 class="nav__title">Contenido</h1>
+            <h2 class="nav__title">Contenido</h1>
             <ul class="nav__items">
-                <li class="nav__item">Introducción</li>
-                <li class="nav__item">Empezar</li>
-                <li class="nav__item">Iniciar con Python (Hola, Mundo!)</li>
-                <li class="nav__item">Variables</li>
-                <li class="nav__item">Tipos de datos de Python</li>
-                <li class="nav__item">Números en Python (int y float)</li>
-                <li class="nav__item"></li>
+                <li class="nav__item"><a class="nav__link" href="#intro">Introducción</a></li>
+                <li class="nav__item"><a class="nav__link" href="#get-started">Empezar</a></li>
+                <li class="nav__item"><a class="nav__link" href="#start">Iniciar con Python (Hola, Mundo!)</a></li>
+                <li class="nav__item"><a class="nav__link" href="#variables">Variables</a></li>
+                <li class="nav__item"><a class="nav__link" href="#data-types">Tipos de datos de Python</a></li>
+                <li class="nav__item"><a class="nav__link" href="#numbers">Números en Python (int y float)</a></li>
+                <li class="nav__item"><a class="nav__link" href="#strings">Cadenas (string</a></li>
+                <li class="nav__item"><a class="nav__link" href="#list">Lista</a></li>
+                <li class="nav__item"><a class="nav__link" href="#tuple">Tupla</a></li>
+                <li class="nav__item"><a class="nav__link" href="#if-statements">Declaraciones If</a></li>
+                <li class="nav__item"><a class="nav__link" href="#dictionary">Diccionario</a></li>
+                <li class="nav__item"><a class="nav__link" href="#for-loop">Blucle for</a></li>
+                <li class="nav__item"><a class="nav__link" href="#input">Entrada usuario (input)</a></li>
+                <li class="nav__item"><a class="nav__link" href="#while-loop">Bucle while</a></li>
+                <li class="nav__item"><a class="nav__link" href="#functions">Funciones</a></li>
+                <li class="nav__item"><a class="nav__link" href="#zen-python">Zen de Python</a></li>
+                <li class="nav__item"><a class="nav__link" href="#references">Referencias</a></li>
             </ul>
         </nav>
     </header>
+    <main class="main" id="main-doc">
+        <section class="main-section intro container" id="intro">
+            <header class="caption">Introducción</header>
+            <h2 class="intro__caption">¿Qué es Python?</h2>
+            <p class="intro__paragraph">
+                Python es un lenguaje de programación creado por <strong>Guido van Rossum</strong> a finales de los ochenta cuya filosofía hace hincapié en la legibilidad de su código. Su nombre está inspirado por la afición de su creador en el grupo de cómicos ingleses <strong>Monty Python</strong>.
+            </p>
+            <p class="intro__paragraph">
+                Se trata de un lenguaje interpretado, miltiplataforma, con tipado dinámico, fuertemente tipado y orientado a objetos.
+            </p>
+            <h2 class="intro__caption">Es usado para diferentes propósitos</h2>
+            <ul class="intro__items">
+                <li class="intro__item">Desarrollo web (del lado del servidor)</li>
+                <li class="intro__item">Inteligencia artificial</li>
+                <li class="intro__item">Ciencia de datos</li>
+                <li class="intro__item">Desarrollo de software</li>
+                <li class="intro__item">Crear videojuegos</li>
+                <li class="intro__item">Scripting</li>
+            </ul>
+            <h2 class="intro__caption">¿Qué puede hacer Python?</h2>
+            <ul class="intro__items">
+                <li class="intro__item">Python se puede utilizar en un servidor para crear aplicaciones web</li>
+                <li class="intro__item">Python se puede utilizar junto con el software para crear flujos de trabajo</li>
+                <li class="intro__item">Python puede conectarse a sistemas de bases de datos. También puede leer y modificar archivos</li>
+                <li class="intro__item">Python se puede utilizar para manejar grandes cantidades de datos y realizar matemáticas complejas</li>
+                <li class="intro__item">Python se puede utilizar para la creación rápida de prototipos o para el desarrollo de software listo para producción</li>
+            </ul>
+            <h2 class="intro__caption">¿Por qué Python?</h2>
+            <ul class=introt__items">
+                <li class="intro__item">Python es un lenguaje multiplataforma, lo que significa que funciona en diferentes plataformas (Windows, Mac, Linux, Raspberry Pi, etc.)</li>
+                <li class="intro__item">Python tiene una sintaxis simple similar al idioma inglés</li>
+                <li class="intro__item">Python tiene una sintaxis que permite a los desarrolladores escribir programas con menos líneas que otros lenguajes de programación</li>
+                <li class="intro__item">Python se ejecuta en un sistema de interpretación, lo que significa que el código se puede ejecutar tan pronto como se escribe. Esto significa que la creación de prototipos puede ser muy rápida</li>
+                <li class="intro__item">Python puede tratarse de forma procedimental, orientada a objetos o funcional.</li>
+                <li class="intro__item">Python tiene una comunidad que incluye un grupo de personas increíblemente diverso y acogedor. Tener una comunidad bien conectada y de apoyo es fundamental para ayudar a resolver problemas, y la comunidad de Python apoya plenamente a personas que están aprendiendo Python como su primer lenguaje de programación.</li>
+            </ul>
+            <h2 class="intro__caption">Bueno saber</h2>
+            <ul class="intro__items">
+                <li class="intro__item">La versión principal más reciente de Python es Python 3, que se usará en esta documentación. Sin embargo, Python 2, aunque no se actualiza con nada más que actualizaciones de seguridad, sigue siendo bastante popular.</li>
+                <li class="intro__item">En esta documentación, Python se escribirá en la terminal y en un editor de texto. Puede utilizar un editor de código como Visual Studio Code, Sublime Text, Atom, o también en un entorno de desarrollo integrado, como Thonny, Pycharm, Netbeans, Eclipse, que son particularmente útiles cuando se administran colecciones más grandes de archivos Python. Además, también puede utilizar la terminal de Python o incluso el editor de texto si lo desea.</li>
+            </ul>
+            <h2 class="intro__caption">Sintaxis de Python en comparación con otros lenguajes de programación</h2>
+            <ul class="intro__items">
+                <li class="intro__item">Python fue diseñado para facilitar la lectura y tiene algunas similitudes con el idioma inglés con influencia de las matemáticas.</li>
+                <li class="intro__item">Python usa nuevas líneas para completar un comando, a diferencia de otros lenguajes de programación que a menudo usan punto y coma o paréntesis.</li>
+                <li class="intro__item">Python se basa en la sangría, usando espacios en blanco, para definir el alcance; como el alcance de los bucles, funciones y clases. Otros lenguajes de programación a menudo usan corchetes para este propósito.</li>
+            </ul>
+            <p class="intro__paragraph">
+                Python es un gran lenguaje para aprender, ¡así que comencemos!
+            </p>
+        </section>
+        <section class="main-section get-started container" id="get-started">
+            <header class="caption">Empezar</header>
+            <p class="get-started__paragraph">
+                Primero, verificaremos si hay una versión reciente de Python instalada en su sistema y la instalara si no lo está.
+            </p>
+            <h2 class="get-started__caption">Python en Windows</h2>
+            <p class="get-started__paragraph">
+                Windows no siempre viene con Python, por lo que probablemente necesitara instalarlo.
+            </p>
+            <h2 class="get-started__caption">Python en macOS</h2>
+            <p class="get-started__paragraph">
+                Python ya está instalado en la mayoría de los sistemas macOS, pero lo más probable es que sea una versión desactualizada de la que no querrá aprender.
+            </p>
+            <h2 class="get-started__caption">Python en Linux</h2>
+            <p class="get-started__paragraph">
+                Los sistemas Linux están diseñados para la programación, por lo que Python ya está instalado en la mayoría de las computadoras Linux.
+            </p>
+            <h2 class="get-started__caption">Instalar Python</h2>
+            <p class="get-started__paragraph">
+                Primero, verifique si Python está instalado en su sistema. Abra una ventana de terminal en <strong>Windows</strong> ingresando <strong>command</strong> (o <strong>terminal</strong>) en el menú Inicio y presione <strong>enter</strong> en la aplicación que aparece o presione la combinación de teclas <strong>Windows + r</strong>, y en la ventana que aparece escriba <strong>cmd</strong> y presione <strong>enter</strong>; en <strong>Mac</strong> abra una ventana de terminal yendo a <strong>Applications > Utilities > Terminal</strong>, también puede presionar la tecla <strong>Command</strong>, y escribir <strong>terminal</strong> y luego presionar <strong>Intro</strong>; en <strong>Linux</strong> abra una ventana de terminal ejecutando la aplicación <strong>Terminal</strong> en su sistema (en Ubuntu, puede presionar ctrl-alt-T).
+            </p>
+            <p class="get-started__paragraph">
+                En la ventana de terminal, ingrese <strong>python</strong> en minúsculas en Windows y Mac (en Linux escriba python3). Si obtiene un indicador de Python (>>>) como respuesta, Python está instalado en su sistema. Si ve un mensaje de error que indica que Python no es un comando reconocido, Python no está instalado.
+            </p>
+            <p class="get-started__paragraph">
+                En ese caso, o si ve una versión de Python anterior a Python 3, debe descargar un instalador de Python desde la página oficial. Vaya a la <a class="get-started__link" href="https://www.python.org/" target="_blank">página oficial de Python</a> y coloque el cursor sobre <strong>Downloads</strong>. Debería ver un botón para descargar la última versión de Python. Haz clic en el botón, que debería comenzar a descargar automáticamente el instalador correcto para su sistema.                        
+            </p>
+            <p class="get-started__paragraph">
+                Una vez que haya descargado el archivo, ejecute el instalador. Asegúrese de seleccionar la opción <strong>Add Python to PATH</strong>, lo que facilitará la configuración correcta de su sistema, y presione en <strong>Install now</strong>.
+            </p>
+        </section>
+        <section class="main-section start container" id="start">
+            <header class="caption">Iniciar con Python (Hola, Mundo!)</header>
+            <p class="start__paragraph">
+                Una vez instalado Python en su sistema, abra la terminal de Python y escriba su primer programa.
+            </p>
+            <p class="start__paragraph">
+                Ingrese la siguiente línea en su sesión de Python y asegúrese de ver el resultado: Hello, World!
+            </p>
+            <pre class="chroma">
+                <code class="language-python--terminal">
+                    <span class="p">>>></span>
+                    <span class="f">print</span>
+                    <span class="p">(</span>
+                    <span class="q">"</span>
+                    <span class="w">Hello, World!</span>
+                    <span class="q">"</span>
+                    <span class="p">)</span>
+                    <span class="p">>>></span>
+                </code>
+            </pre>
+            <p class="start__paragraph">
+                Perfecto, ha instado Python correctamente en su sistema.
+            </p>
+        </section>
+    </main>
 </body>
 </html>
