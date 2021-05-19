@@ -1,0 +1,53 @@
+
+*, ::before, ::after {
+    margin: 0;
+    line-height: 1.5;
+}
+
+
+
+
+
+
+
+
+
+.highlight {
+    background: #000c18;
+    margin: 0;
+}
+pre {
+    overflow-x: auto;
+}
+
+code {
+    display: flex;
+    flex-direction: column;
+    margin: 40px 0;
+}
+
+div {
+    display: flex;
+    line-height: 1.5;
+    margin-left: 30px;
+}
+
+.p{
+    color: #fff;
+}
+
+.f {
+    color: #1e90ff;
+}
+
+.s, .q {
+    color: #f5d143;
+}
+
+.highlight--terminal {
+    background: #000;
+}
+
+.t {
+    color: #fff;
+}
