@@ -2,6 +2,7 @@
 *, ::before, ::after {
     margin: 0;
     line-height: 1.5;
+    box-sizing: border-box;
 }
 
 
@@ -10,38 +11,49 @@
 
 
 
-
+/* Code color */
 
 .highlight {
-    background: #000c18;
-    margin: 0;
-}
-pre {
-    overflow-x: auto;
+    background: #f5f6fa;
+    margin: 10px 20px;
 }
 
-code {
+.chroma__python {
     display: flex;
     flex-direction: column;
-    margin: 40px 0;
+    padding: 15px;
 }
 
-div {
+.chroma__code {
     display: flex;
-    line-height: 1.5;
-    margin-left: 30px;
 }
 
 .p{
-    color: #fff;
+    color: #040505;
 }
 
 .f {
-    color: #1e90ff;
+    color: #1858ad;
 }
 
 .s, .q {
-    color: #f5d143;
+    color: #ad1858;
+}
+
+.k, .o {
+    color: #c82c32;
+}
+
+.n {
+    color: #58ad18;
+}
+
+.co {
+    color: #3b3b3b;
+}
+
+.op {
+    color: #16344a;
 }
 
 .highlight--terminal {
@@ -50,4 +62,16 @@ div {
 
 .t {
     color: #fff;
+}
+
+.highlight--light {
+    background: #f8f9fa;
+}
+
+.l {
+    color: #000;
+}
+
+.highlight--red {
+    border: 2px solid #c82c32;
 }

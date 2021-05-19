@@ -43,14 +43,14 @@
     <main class="main" id="main-doc">
         <section class="main-section intro container" id="intro">
             <header class="caption">Introducción</header>
-            <h2 class="intro__caption">¿Qué es Python?</h2>
+            <h2 class="sub-caption">¿Qué es Python?</h2>
             <p class="intro__paragraph">
                 Python es un lenguaje de programación creado por <strong>Guido van Rossum</strong> a finales de los ochenta cuya filosofía hace hincapié en la legibilidad de su código. Su nombre está inspirado por la afición de su creador en el grupo de cómicos ingleses <strong>Monty Python</strong>.
             </p>
             <p class="intro__paragraph">
                 Se trata de un lenguaje interpretado, miltiplataforma, con tipado dinámico, fuertemente tipado y orientado a objetos.
             </p>
-            <h2 class="intro__caption">Es usado para diferentes propósitos</h2>
+            <h2 class="sub-caption">Es usado para diferentes propósitos</h2>
             <ul class="intro__items">
                 <li class="intro__item">Desarrollo web (del lado del servidor)</li>
                 <li class="intro__item">Inteligencia artificial</li>
@@ -59,7 +59,7 @@
                 <li class="intro__item">Crear videojuegos</li>
                 <li class="intro__item">Scripting</li>
             </ul>
-            <h2 class="intro__caption">¿Qué puede hacer Python?</h2>
+            <h2 class="sub-caption">¿Qué puede hacer Python?</h2>
             <ul class="intro__items">
                 <li class="intro__item">Python se puede utilizar en un servidor para crear aplicaciones web</li>
                 <li class="intro__item">Python se puede utilizar junto con el software para crear flujos de trabajo</li>
@@ -67,7 +67,7 @@
                 <li class="intro__item">Python se puede utilizar para manejar grandes cantidades de datos y realizar matemáticas complejas</li>
                 <li class="intro__item">Python se puede utilizar para la creación rápida de prototipos o para el desarrollo de software listo para producción</li>
             </ul>
-            <h2 class="intro__caption">¿Por qué Python?</h2>
+            <h2 class="sub-caption">¿Por qué Python?</h2>
             <ul class=introt__items">
                 <li class="intro__item">Python es un lenguaje multiplataforma, lo que significa que funciona en diferentes plataformas (Windows, Mac, Linux, Raspberry Pi, etc.)</li>
                 <li class="intro__item">Python tiene una sintaxis simple similar al idioma inglés</li>
@@ -76,12 +76,12 @@
                 <li class="intro__item">Python puede tratarse de forma procedimental, orientada a objetos o funcional.</li>
                 <li class="intro__item">Python tiene una comunidad que incluye un grupo de personas increíblemente diverso y acogedor. Tener una comunidad bien conectada y de apoyo es fundamental para ayudar a resolver problemas, y la comunidad de Python apoya plenamente a personas que están aprendiendo Python como su primer lenguaje de programación.</li>
             </ul>
-            <h2 class="intro__caption">Bueno saber</h2>
+            <h2 class="sub-caption">Bueno saber</h2>
             <ul class="intro__items">
                 <li class="intro__item">La versión principal más reciente de Python es Python 3, que se usará en esta documentación. Sin embargo, Python 2, aunque no se actualiza con nada más que actualizaciones de seguridad, sigue siendo bastante popular.</li>
                 <li class="intro__item">En esta documentación, Python se escribirá en la terminal y en un editor de texto. Puede utilizar un editor de código como Visual Studio Code, Sublime Text, Atom, o también en un entorno de desarrollo integrado, como Thonny, Pycharm, Netbeans, Eclipse, que son particularmente útiles cuando se administran colecciones más grandes de archivos Python. Además, también puede utilizar la terminal de Python o incluso el editor de texto si lo desea.</li>
             </ul>
-            <h2 class="intro__caption">Sintaxis de Python en comparación con otros lenguajes de programación</h2>
+            <h2 class="sub-caption">Sintaxis de Python en comparación con otros lenguajes de programación</h2>
             <ul class="intro__items">
                 <li class="intro__item">Python fue diseñado para facilitar la lectura y tiene algunas similitudes con el idioma inglés con influencia de las matemáticas.</li>
                 <li class="intro__item">Python usa nuevas líneas para completar un comando, a diferencia de otros lenguajes de programación que a menudo usan punto y coma o paréntesis.</li>
@@ -96,19 +96,19 @@
             <p class="get-started__paragraph">
                 Primero, verificaremos si hay una versión reciente de Python instalada en su sistema y la instalara si no lo está.
             </p>
-            <h2 class="get-started__caption">Python en Windows</h2>
+            <h2 class="sub-caption">Python en Windows</h2>
             <p class="get-started__paragraph">
                 Windows no siempre viene con Python, por lo que probablemente necesitara instalarlo.
             </p>
-            <h2 class="get-started__caption">Python en macOS</h2>
+            <h2 class="sub-caption">Python en macOS</h2>
             <p class="get-started__paragraph">
                 Python ya está instalado en la mayoría de los sistemas macOS, pero lo más probable es que sea una versión desactualizada de la que no querrá aprender.
             </p>
-            <h2 class="get-started__caption">Python en Linux</h2>
+            <h2 class="sub-caption">Python en Linux</h2>
             <p class="get-started__paragraph">
                 Los sistemas Linux están diseñados para la programación, por lo que Python ya está instalado en la mayoría de las computadoras Linux.
             </p>
-            <h2 class="get-started__caption">Instalar Python</h2>
+            <h2 class="sub-caption">Instalar Python</h2>
             <p class="get-started__paragraph">
                 Primero, verifique si Python está instalado en su sistema. Abra una ventana de terminal en <strong>Windows</strong> ingresando <strong>command</strong> (o <strong>terminal</strong>) en el menú Inicio y presione <strong>enter</strong> en la aplicación que aparece o presione la combinación de teclas <strong>Windows + r</strong>, y en la ventana que aparece escriba <strong>cmd</strong> y presione <strong>enter</strong>; en <strong>Mac</strong> abra una ventana de terminal yendo a <strong>Applications > Utilities > Terminal</strong>, también puede presionar la tecla <strong>Command</strong>, y escribir <strong>terminal</strong> y luego presionar <strong>Intro</strong>; en <strong>Linux</strong> abra una ventana de terminal ejecutando la aplicación <strong>Terminal</strong> en su sistema (en Ubuntu, puede presionar ctrl-alt-T).
             </p>
@@ -141,18 +141,158 @@
                         <span class="t">"</span>
                         <span class="t">)</span>
                     </div>
-                    <div>
+                    <div class="chroma__code">
                         <span class="t">Hello, World!</span>
                     </div>
-                    <div>
+                    <div class="chroma__code">
                         <span class="t">>>></span>
                     </div>
-                    </code></pre>
+                </code></pre>
             </div>
             <p class="start__paragraph">
                 Perfecto, ha instado Python correctamente en su sistema.
             </p>
+            <h2 class="sub-caption">La línea de comandos de Python</h2>
+            <p class="start__paragraph">
+                Para probar una pequeña cantidad de código en Python, a veces es más rápido y fácil escribirlo directamente en la terminal de Python y no escribir el código en un archivo. Esto es posible porque Python se puede ejecutar como una línea de comandos.
+            </p>
+            <p class="start__paragraph">
+                Siempre que haya terminado de trabajar en la línea de comando de Python, simplemente puede escribir lo siguiente para salir de la interfaz de línea de comando de Python: <strong>exit()</strong> o <strong>ctrl + z</strong> (en Windows)
+            </p>
+            <h2 class="sub-caption">Crear archivos Python</h2>
+            <p class="start__paragraph">
+                Python es un lenguaje de programación interpretado, esto significa que, como desarrollador, escribe archivos Python <strong>(.py)</strong> en un editor de texto y luego coloca esos archivos en el intérprete de Python para que se ejecuten o también puede ejecutar el archivo directamente desde un editor de código o IDE que esté utilizando.
+            </p>
+            <p class="start__paragraph">
+                La forma de ejecutar un archivo python es así en la línea de comando:
+            </p>
+            <div class="highlight highlight--terminal">
+                <pre class="chroma"><code class="chroma__python">
+                    <div class="chroma__code">
+                        <span class="t">C:\Users\Your Name>python helloworld.py</span>
+                    </div>
+                </code></pre>
+            </div>
+            <p class="start__paragraph">
+                Donde <strong>helloworld.py</strong> es el nombre de su archivo Python.
+            </p>
+            <p class="start__paragraph">
+                Escribamos nuestro primer archivo Python, llamado <strong>helloworld.py</strong>, que se puede hacer en cualquier editor de texto.
+            </p>
+            <p class="start__paragraph">
+                Primero cree un archivo desde el editor de texto que esté utilizando llamado: helloworld.py, e ingrese la siguiente línea de código (asegúrese de que la extensión del archivo que creo sea <strong>.py</strong>:
+            </p>
+            <div class="highlight highlight--light">
+                <pre class="chroma"><code class="chroma__python">
+                    <div class="chroma__code">
+                        <span class="l">print("Hello, World!")</span>
+                    </div>
+                </code></pre>
+            </div>
+            <p class="start__paragraph">
+                Primero cree un archivo desde el editor de texto que esté utilizando llamado: helloworld.py, e ingrese la siguiente línea de código (asegúrese de que la extensión del archivo que creo sea <strong>.py</strong>:
+            </p>
+            <div class="highlight highlight--terminal">
+                <pre class="chroma"><code class="chroma__python">
+                    <div class="chroma__code">
+                        <span class="t">C:\Users\Your Name>python helloworld.py</span>
+                    </div>
+                </code></pre>
+            </div>
+            <p class="start__paragraph">
+                La salida debería verse así:
+            </p>
+            <div class="highlight highlight--terminal">
+                <pre class="chroma"><code class="chroma__python">
+                    <div class="chroma__code">
+                        <span class="t">Hello, World!</span>
+                    </div>
+                </code></pre>
+            </div>
+            <p class="start__paragraph">
+                Felicitaciones, ha escrito y ejecutado su primer programa Python.
+            </p>
+            <h2 class="sub-caption">Sangría de Python</h2>
+            <p class="start__paragraph">
+                La sangría se refiere a los espacios en blanco al comienzo de una línea de código.
+            </p>
+            <p class="start__paragraph">
+                Mientras que en otros lenguajes de programación la sangría en el código es solo para legibilidad, la sangría en Python es muy importante.
+            </p>
+            <p class="start__paragraph">
+                Python usa sangría para indicar un bloque de código.
+            </p>
+            <div class="highlight">
+                <pre class="chroma"><code class="chroma__python">
+                    <div class="chroma__code">
+                        <span class="k">if </span>
+                        <span class="n">5 </span>
+                        <span class="o">> </span>
+                        <span class="n">2</span>
+                        <span class="p">:</span>
+                    </div>
+                    <div class="chroma__code">
+                        <span class="f">    print</span>
+                        <span class="p">(</span>
+                        <span class="s">"Five is greater than two!")</span>
+                        <span class="p">)</span>
+                    </div>
+                </code></pre>
+            </div>
+            <p class="start__paragraph">
+                Python le dará un error si omite la sangría y obtendra un error de sintaxis:
+            </p>
+            <div class="highlight highlight--red">
+                <pre class="chroma"><code class="chroma__python">
+                    <div class="chroma__code">
+                        <span class="k">if </span>
+                        <span class="n">5 </span>
+                        <span class="o">> </span>
+                        <span class="n">2</span>
+                        <span class="p">:</span>
+                    </div>
+                    <div class="chroma__code">
+                        <span class="f">print</span>
+                        <span class="p">(</span>
+                        <span class="s">"Five is greater than two!")</span>
+                        <span class="p">)</span>
+                    </div>
+                </code></pre>
+            </div>
+            <p class="start__paragraph">
+                El número de espacios depende de usted como programador, pero debe ser al menos uno. El número más usado son cuatro espacios en blanco de sangría.
+            </p>
+            <h2 class="sub-caption">Crear un comentario</h2>
+            <p class="start__paragraph">
+                Los comentarios comienzan con el carácter de numeral #, y Python los ignorará:
+            </p>
+            <div class="highlight">
+                <pre class="chroma"><code class="chroma__python">
+                    <div class="chroma__code">
+                        <span class="co">#Esto es un comentario</span>
+                    </div>
+                    <div class="chroma__code">
+                        <span class="f">print</span>
+                        <span class="p">(</span>
+                        <span class="q">"</span>
+                        <span class="s">Hello, World!</span>
+                        <span class="q">"</span>
+                        <span class="p">)</span>
+                    </div>
+                </code></pre>
+            </div>
+            <p class="start__paragraph">
+                Salida:
+            </p>
+            <div class="highlight">
+                <pre class="chroma"><code class="chroma__python">
+                    <div class="chroma__code">
+                        <span class="op">Hello, World!</span>
+                    </div>
+                </code></pre>
+            </div>
         </section>
+
     </main>
 </body>
 </html>
