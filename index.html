@@ -29,7 +29,7 @@
                 <li class="nav__item"><a class="nav__link" href="#strings">Cadenas (string</a></li>
                 <li class="nav__item"><a class="nav__link" href="#list">Lista</a></li>
                 <li class="nav__item"><a class="nav__link" href="#tuple">Tupla</a></li>
-                <li class="nav__item"><a class="nav__link" href="#if-statements">Declaraciones If</a></li>
+                <li class="nav__item"><a class="nav__link" href="#if-statement">Declaración If</a></li>
                 <li class="nav__item"><a class="nav__link" href="#dictionary">Diccionario</a></li>
                 <li class="nav__item"><a class="nav__link" href="#for-loop">Blucle for</a></li>
                 <li class="nav__item"><a class="nav__link" href="#input">Entrada usuario (input)</a></li>
@@ -133,13 +133,7 @@
             <div class="highlight highlight--terminal">
                 <pre class="chroma"><code class="chroma__python">
                     <div class="chroma__code">
-                        <span class="t">>>> </span>
-                        <span class="t">print</span>
-                        <span class="t">(</span>
-                        <span class="t">"</span>
-                        <span class="t">Hello, World!</span>
-                        <span class="t">"</span>
-                        <span class="t">)</span>
+                        <span class="t">>>> print ("Hello, World!")</span>
                     </div>
                     <div class="chroma__code">
                         <span class="t">Hello, World!</span>
@@ -292,7 +286,924 @@
                 </code></pre>
             </div>
         </section>
-
+        <section class="main-section variables container" id="variables">
+            <header class="caption">Variables</header>
+            <p class="variables__paragraph">
+                Las variables se utilizan para almacenar valores y se crean cuando le asigna un valor:
+            </p>
+            <div class="highlight">
+                <pre class="chroma"><code class="chroma__python">
+                    <div class="chroma__code">
+                        <span class="v">x </span>
+                        <span class="o">= </span>
+                        <span class="n">5</span>
+                    </div>
+                    <div class="chroma__code">
+                        <span class="v">y </span>
+                        <span class="o">= </span>
+                        <span class="q">"</span>
+                        <span class="s">Hello!</span>
+                        <span class="q">"</span>
+                    </div>
+                </code></pre>
+            </div>
+            <p class="variables__paragraph">
+                Las variables no necesitan declararse con ningún tipo en particular, e incluso pueden cambiar de tipo después de que se hayan establecido.
+            </p>
+            <div class="highlight">
+                <pre class="chroma"><code class="chroma__python">
+                    <div class="chroma__code">
+                        <span class="v">x </span>
+                        <span class="o">= </span>
+                        <span class="n">4 </span>
+                        <span class="co"># x es de tipo entero (int)</span>
+                    </div>
+                    <div class="chroma__code">
+                        <span class="v">x </span>
+                        <span class="o">= </span>
+                        <span class="q">"</span>
+                        <span class="s">Sally</span>
+                        <span class="q">" </span>
+                        <span class="co"># x ahora es una cadena (string)</span>
+                    </div>
+                </code></pre>
+            </div>
+            <h2 class="sub-caption">Conversión de tipo de datos</h2>
+            <p class="variables__paragraph">
+                Si desea especificar el tipo de datos de una variable, puede hacerlo con conversión:
+            </p>
+            <div class="highlight">
+                <pre class="chroma"><code class="chroma__python">
+                    <div class="chroma__code">
+                        <span class="v">x </span>
+                        <span class="o">= </span>
+                        <span class="f">str</span>
+                        <span class="p">(</span>
+                        <span class="n">3</span>
+                        <span class="p">) </span>
+                        <span class="co"># x será '3'</span>
+                    </div>
+                    <div class="chroma__code">
+                        <span class="v">y </span>
+                        <span class="o">= </span>
+                        <span class="f">int</span>
+                        <span class="p">(</span>
+                        <span class="n">3</span>
+                        <span class="p">) </span>
+                        <span class="co"># y será 3</span>
+                    </div>
+                    <div class="chroma__code">
+                        <span class="v">z </span>
+                        <span class="o">= </span>
+                        <span class="f">float</span>
+                        <span class="p">(</span>
+                        <span class="n">3</span>
+                        <span class="p">) </span>
+                        <span class="co"># z será 3.0</span>
+                    </div>                    
+                </code></pre>
+            </div>
+            <h2 class="sub-caption">Python distingue entre mayúsculas y minúsculas (Case sensitive)</h2>            
+            <p class="variables__paragraph">
+                Los nombres de las variables distinguen entre mayúsculas y minúsculas.
+            </p>
+            <p class="variables__paragraph">
+                Esto creará dos variables:
+            </p>
+            <div class="highlight">
+                <pre class="chroma"><code class="chroma__python">
+                    <div class="chroma__code">
+                        <span class="co"># A no es igual que a</span>
+                    </div>
+                    <div class="chroma__code">
+                        <span class="v">a </span>
+                        <span class="o">= </span>
+                        <span class="n">4</span>
+                        <span class=""></span>
+                        <span class=""></span>
+                        <span class=""></span>
+                        <span class=""></span>
+                    </div>
+                    <div class="chroma__code">
+                        <span class="v">A </span>
+                        <span class="o">= </span>
+                        <span class="q">"</span>
+                        <span class="s">Sally</span>
+                        <span class="q">"</span>
+                    </div>                    
+                </code></pre>
+            </div>
+            <h2 class="sub-caption">Nombrar y usar variables</h2>
+            <p class="variables__paragraph">
+                Cuando usa variables en Python, debe cumplir con algunas reglas y pautas. Romper algunas de estas reglas provocará errores; otras pautas solo lo ayudan a escribir código que sea más fácil de leer y comprender. Asegúrese de tener en cuenta las siguientes reglas de variables:
+            </p>
+            <ul class="variables__items">
+                <li class="variables__item">Los nombres de las variables solo pueden contener letras, números y guiones bajos. Pueden comenzar con una letra o un guion bajo, pero no con un número. Por ejemplo, puede llamar a una variable <strong>message_1</strong> pero no <strong>1_message</strong>.</li>
+                <li class="variables__item">No se permiten espacios en los nombres de las variables, pero se pueden usar guiones bajos para separar palabras en los nombres de las variables. Por ejemplo, <strong>greeting_message</strong> funciona, pero <strong>greeting message</strong> provocará errores.</li>
+                <li class="variables__item">Evite el uso de palabras clave de Python y nombres de funciones como nombres de variables; es decir, no use palabras que Python haya reservado para un propósito programático particular, como la palabra <strong>print</strong> (Consulte en w3schools.com las <a class="variables__link" href="https://www.w3schools.com/python/python_ref_keywords.asp" target="_blank">palabras clave </a>y <a class="variables__link" href="https://www.w3schools.com/python/python_ref_functions.asp" target="_blank">funciones integradas </a>de Python).</li>
+                <li class="variables__item">Los nombres de las variables deben ser breves pero descriptivos. Por ejemplo, <strong>name</strong> es mejor que <strong>n</strong>, <strong>student_name</strong> es mejor que <strong>s_n</strong> y <strong>name_length</strong> es mejor que <strong>length_of_persons_name</strong>.</li>
+                <li class="variables__item">Tenga cuidado al usar la letra minúscula <strong>l</strong> y la letra mayúscula <strong>O</strong> porque podrían confundirse con los números <strong>1</strong> y <strong>0</strong>.</li>
+            </ul>
+            <h2 class="sub-caption">Constantes</h2>
+            <p class="variables__paragraph">
+                Una constante es como una variable cuyo valor permanece igual durante la vida de un programa. Python no tiene tipos de constantes incorporados, pero los programadores de Python usan todas las letras mayúsculas para indicar que una variable debe tratarse como una constante y nunca cambiarse:
+            </p>
+            <div class="highlight">
+                <pre class="chroma"><code class="chroma__python">
+                    <div class="chroma__code">
+                        <span class="v">MAX_CONNECTIONS </span>
+                        <span class="o">= </span>
+                        <span class="n">5000</span>
+                    </div>                    
+                </code></pre>
+            </div>            
+            <p class="variables__paragraph">
+                Cuando desee tratar una variable como una constante en su código, haga que el nombre de la variable sea todo en mayúsculas.
+            </p>
+        </section>
+        <section class="main-section data-types container" id="data-types">
+            <header class="caption">Tipos de datos de Python</header>
+            <p class="data-types__paragraph">Las variables pueden almacenar datos de diferentes tipos y diferentes tipos pueden hacer cosas diferentes.</p>
+            <p class="data-types__paragraph">Python tiene los siguientes tipos de datos integrados de forma predeterminada, los más importantes son:</p>
+            <div class="data-types__flex">
+                <article class="data-types__items">
+                    <p class="data_types__item">Tipo de texto:</p>
+                    <p class="data_types__item data_types__item--red">str</p>
+                </article>
+                <article class="data-types__items">
+                    <p class="data_types__item">Tipos numéricos:</p>
+                    <p class="data_types__item data_types__item--red">int, float, complex</p>
+                </article>
+                <article class="data-types__items">
+                    <p class="data_types__item">Tipos de secuencia:</p>
+                    <p class="data_types__item data_types__item--red">list, tuple, range</p>                    
+                </article>
+                <article class="data-types__items">
+                    <p class="data_types__item">Tipo de mapeo:	</p>
+                    <p class="data_types__item data_types__item--red">dict</p>
+                </article>
+                <article class="data-types__items">
+                    <p class="data_types__item">Tipos de conjuntos:</p>
+                    <p class="data_types__item data_types__item--red">set, frozenset</p>                    
+                </article>
+                <article class="data-types__items">
+                    <p class="data_types__item">Binary Types:</p>
+                    <p class="data_types__item data_types__item--red">bytes, bytearray, memoryview</p>
+                </article>
+                <article class="data-types__items"></article>
+            </div>
+            <h2 class="sub-caption">Obtener el tipo de datos</h2>
+            <p class="data-types__paragraph">
+                Puede obtener el tipo de datos de cualquier objeto utilizando la función <strong>type()</strong>:
+            </p>
+            <div class="highlight">
+                <pre class="chroma"><code class="chroma__python">
+                    <div class="chroma__code">
+                        <span class="co"># Imprime el tipo de datos de la variable x</span>
+                    </div> 
+                    <div class="chroma__code">
+                        <span class="v">x </span>
+                        <span class="o">= </span>
+                        <span class="n">5</span>
+                    </div>
+                    <div class="chroma__code">
+                        <span class="f">print</span>
+                        <span class="p">(</span>
+                        <span class="f">type</span>
+                        <span class="p">(</span>
+                        <span class="v">x</span>
+                        <span class="p">))</span>
+                    </div>                  
+                </code></pre>
+            </div>
+            <p class="data-types__paragraph">
+                Salida:
+            </p>
+            <div class="highlight">
+                <pre class="chroma"><code class="chroma__python">
+                    <div class="chroma__code">
+                        <span class="op">&lt;class 'int'&gt;</class></span>
+                    </div>                    
+                </code></pre>
+            </div>
+            <h2 class="sub-caption">Operadores de Python</h2>
+            <p class="data-types__paragraph">
+                Los operadores se utilizan para realizar operaciones con variables y valores.
+            </p>
+            <p class="data-types__paragraph">
+                Python divide los operadores en los siguientes grupos:
+            </p>
+            <ul class="data-types__operators">
+                <li class="data-types__operator">Operadores aritméticos</li>
+                <li class="data-types__operator">Operadores de Asignación</li>
+                <li class="data-types__operator">Operadores de comparación</li>
+                <li class="data-types__operator">Operadores lógicos</li>
+                <li class="data-types__operator">Operadores de identidad</li>
+                <li class="data-types__operator">Operadores de membresía</li>
+                <li class="data-types__operator">Operadores bit a bit</li>
+            </ul>
+            <p class="data-types__paragraph">
+                Consulte en la siguinte página (w3schools.com) los detalles de cada <a class="data-types__link" href="https://www.w3schools.com/python/python_operators.asp" target="_blank">operador</a> y su función. 
+            </p>
+        </section>
+        <section class="main-section numbers container" id="numbers">
+            <header class="caption">Números en Python (int y float)</header>
+            <p class="numbers__paragraph">
+                Los números se utilizan con bastante frecuencia en la programación para llevar la puntuación en los juegos, representar datos en visualizaciones, almacenar información en aplicaciones web, etc. Python trata los números de varias formas diferentes, según cómo se utilicen. Veamos primero cómo Python gestiona los números enteros (o <strong>int</strong>), porque son los más sencillos de trabajar.
+            </p>
+            <h2 class="sub-caption">Enteros (int)</h2>
+            <p class="numbers__paragraph">
+                Puede sumar (+), restar (-), multiplicar (*), dividir (/) y elevar (**) enteros en Python. Además, es posible realizar otras operaciones con % (operador de modulo) y // (división de piso).
+            </p>
+            <div class="highlight highlight--terminal">
+                <pre class="chroma"><code class="chroma__python">
+                    <div class="chroma__code">
+                        <span class="t">>>> 2 + 3</span>
+                    </div>
+                    <div class="chroma__code">
+                        <span class="t">5</span>
+                    </div>
+                    <div class="chroma__code">
+                        <span class="t">>>> 3 - 2</span>
+                    </div>
+                    <div class="chroma__code">
+                        <span class="t">1</span>
+                    </div>
+                    <div class="chroma__code">
+                        <span class="t">>>> 2 * 3</span>
+                    </div>
+                    <div class="chroma__code">
+                        <span class="t">6</span>
+                    </div>
+                    <div class="chroma__code">
+                        <span class="t">>>> 3 / 2</span>
+                    </div>
+                    <div class="chroma__code">
+                        <span class="t">1.5</span>
+                    </div>
+                    <div class="chroma__code">
+                        <span class="t">>>> 3 ** 2</span>
+                    </div>
+                    <div class="chroma__code">
+                        <span class="t">9</span>
+                    </div>
+                    <div class="chroma__code">
+                        <span class="t">>>> 9 % 2</span>
+                    </div>
+                    <div class="chroma__code">
+                        <span class="t">1</span>
+                    </div>
+                    <div class="chroma__code">
+                        <span class="t">>>> 10 // 3</span>
+                    </div>
+                    <div class="chroma__code">
+                        <span class="t">3</span>
+                    </div>
+                </code></pre>
+            </div>
+            <h2 class="sub-caption">Numero de punto flotante (Float)</h2>
+            <p class="numbers__paragraph">
+                Python llama flotante a cualquier número con un punto decimal. Este término se utiliza en la mayoría de los lenguajes de programación y se refiere al hecho de que un punto decimal puede aparecer en cualquier posición de un número.
+            </p>
+            <div class="highlight highlight--terminal">
+                <pre class="chroma"><code class="chroma__python">
+                    <div class="chroma__code">
+                        <span class="t">>>> 0.1 + 0.1</span>
+                    </div>
+                    <div class="chroma__code">
+                        <span class="t">0.2</span>
+                    </div>
+                    <div class="chroma__code">
+                        <span class="t">>>> 0.2 + 0.2</span>
+                    </div>
+                    <div class="chroma__code">
+                        <span class="t">0.4</span>
+                    </div>
+                    <div class="chroma__code">
+                        <span class="t">>>> 2 * 0.1</span>
+                    </div>
+                    <div class="chroma__code">
+                        <span class="t">0.2</span>
+                    </div>
+                    <div class="chroma__code">
+                        <span class="t">>>> 2 * 0.2</span>
+                    </div>
+                    <div class="chroma__code">
+                        <span class="t">0.4</span>
+                    </div>
+                </code></pre>
+            </div>
+        </section>
+        <section class="main-section strings container" id="strings">
+            <header class="caption">Cadenas (string)</header>
+            <p class="strings__paragraph">
+                Una cadena es una serie de caracteres rodeados de comillas simples o dobles.
+            </p>
+            <h2 class="sub-caption">Hola mundo con una variable</h2>
+            <div class="highlight">
+                <pre class="chroma"><code class="chroma__python">
+                    <div class="chroma__code">
+                        <span class="v">msg </span>
+                        <span class="o">= </span>
+                        <span class="q">"</span>
+                        <span class="s">Hello world!</span>
+                        <span class="q">"</span>
+                    </div>
+                    <div class="chroma__code">
+                        <span class="f">print</span>
+                        <span class="p">(</span>
+                        <span class="v">msg</span>
+                        <span class="p">(</span>
+                    </div>
+                </code></pre>
+            </div>
+            <p class="strings__paragraph">
+                Salida:
+            </p>
+            <div class="highlight">
+                <pre class="chroma"><code class="chroma__python">
+                    <div class="chroma__code">
+                        <span class="op">Hello world!</span>
+                    </div>
+                </code></pre>
+            </div>
+            <h2 class="sub-caption">Usar variables en una cadena (usando f-string para formatear la salida)</h2>
+            <div class="highlight">
+                <pre class="chroma"><code class="chroma__python">
+                    <div class="chroma__code">
+                        <span class="v">first_name </span>
+                        <span class="o">= </span>
+                        <span class="q">'</span>
+                        <span class="s">albert</span>
+                        <span class="q">'</span>
+                    </div>
+                    <div class="chroma__code">
+                        <span class="v">last_name </span>
+                        <span class="o">= </span>
+                        <span class="q">'</span>
+                        <span class="s">einstein</span>
+                        <span class="q">'</span>
+                    </div>
+                    <div class="chroma__code">
+                        <span class="v">full_name </span>
+                        <span class="o">= </span>
+                        <span class="f">f</span>
+                        <span class="q">"</span>
+                        <span class="p">{</span>
+                        <span class="v">first_name</span>
+                        <span class="p">} </span>
+                        <span class="p">{</span>
+                        <span class="v">last_name</span>
+                        <span class="p">}</span>
+                        <span class="q">"</span>
+                    </div>
+                    <div class="chroma__code">
+                        <span class="f">print</span>
+                        <span class="p">(</span>
+                        <span class="v">full_name</span>
+                        <span class="p">)</span>
+                    </div>
+                </code></pre>
+            </div>
+            <p class="strings__paragraph">
+                Estas cuerdas se llaman f-strings y se utilizan para formatear cadenas (en otras palabras, para mostrar las variables en pantalla con una llamada a la función print) La f es para formato, porque Python formatea la cadena reemplazando el nombre de cualquier variable entre llaves con su valor. La salida del código anterior es:
+            </p>
+            <div class="highlight">
+                <pre class="chroma"><code class="chroma__python">
+                    <div class="chroma__code">
+                        <span class="op">albert einstein</span>
+                    </div>
+                </code></pre>
+            </div>
+            <p class="strings__paragraph">
+                Las f-string se introdujeron por primera vez en Python 3.6. Si está utilizando Python 3.5 o una versión anterior, deberá utilizar el método format () en lugar de esta sintaxis f. Para usar format (), enumere las variables que desea usar en la cadena dentro del siguiente formato entre paréntesis. Cada variable se denomina mediante un conjunto de llaves; las llaves se completarán con los valores enumerados entre paréntesis en el orden proporcionado:
+            </p>
+        </section>
+        <section class="main-section list container" id="list">
+            <header class="caption">Lista</header>
+            <p class="list__paragraph">
+                Una lista es una colección de elementos en un orden particular. Puede acceder a cualquier elemento de una lista indicándole a Python la posición, o índice, del elemento deseado.
+            </p>
+            <p class="list__paragraph">
+                Ten en cuenta que Python considera que el primer elemento de una lista está en la posición 0, no en la posición 1.
+            </p>
+            <h2 class="sub-caption">Crear una lista</h2>
+            <div class="highlight">
+                <pre class="chroma"><code class="chroma__python">
+                    <div class="chroma__code">
+                        <span class="v">bikes </span>
+                        <span class="o">= </span>
+                        <span class="p">[</span>
+                        <span class="q">'</span>
+                        <span class="s">trek</span>
+                        <span class="q">'</span>
+                        <span class="p">, </span>
+                        <span class="q">'</span>
+                        <span class="s">redline</span>
+                        <span class="q">'</span>
+                        <span class="p">, </span>
+                        <span class="q">'</span>
+                        <span class="s">giant</span>
+                        <span class="q">'</span>
+                        <span class="p">]</span>
+                    </div>
+                    <div class="chroma__code">
+                        <span class="f">print</span>
+                        <span class="p">(</span>
+                        <span class="v">bikes</span>
+                        <span class="p">)</span>
+                    </div>
+                </code></pre>
+            </div>
+            <p class="list__paragraph">
+                Salida:
+            </p>
+            <div class="highlight">
+                <pre class="chroma"><code class="chroma__python">
+                    <div class="chroma__code">
+                        <span class="op">['trek', 'redline', 'giant']</span>
+                    </div>
+                </code></pre>
+            </div>
+            <h2 class="sub-caption">Obtener el primer elemento de una lista</h2>
+            <div class="highlight">
+                <pre class="chroma"><code class="chroma__python">
+                    <div class="chroma__code">
+                        <span class="v">bikes </span>
+                        <span class="o">= </span>
+                        <span class="p">[</span>
+                        <span class="q">'</span>
+                        <span class="s">trek</span>
+                        <span class="q">'</span>
+                        <span class="p">, </span>
+                        <span class="q">'</span>
+                        <span class="s">redline</span>
+                        <span class="q">'</span>
+                        <span class="p">, </span>
+                        <span class="q">'</span>
+                        <span class="s">giant</span>
+                        <span class="q">'</span>
+                        <span class="p">]</span>
+                    </div>
+                    <div class="chroma__code">
+                        <span class="v">first_bike </span>
+                        <span class="o">= </span>
+                        <span class="v">bikes</span>
+                        <span class="p">[</span>
+                        <span class="n">0</span>
+                        <span class="p">]</span>
+                    </div>
+                    <div class="chroma__code">
+                        <span class="f">print</span>
+                        <span class="p">(</span>
+                        <span class="v">first_bike</span>
+                        <span class="p">)</span>
+                    </div>
+                </code></pre>
+            </div>
+            <p class="list__paragraph">
+                Salida:
+            </p>
+            <div class="highlight">
+                <pre class="chroma"><code class="chroma__python">
+                    <div class="chroma__code">
+                        <span class="op">trek</span>
+                    </div>
+                </code></pre>
+            </div>
+            <h2 class="sub-caption">Obtener el último elemento de una lista</h2>
+            <p class="list__paragraph">
+                Python tiene una sintaxis especial para acceder al último elemento de una lista. Al solicitar el elemento en el índice -1, Python siempre devuelve el último elemento de la lista:
+            </p>
+            <div class="highlight">
+                <pre class="chroma"><code class="chroma__python">
+                    <div class="chroma__code">
+                        <span class="v">bikes </span>
+                        <span class="o">= </span>
+                        <span class="p">[</span>
+                        <span class="q">'</span>
+                        <span class="s">trek</span>
+                        <span class="q">'</span>
+                        <span class="p">, </span>
+                        <span class="q">'</span>
+                        <span class="s">redline</span>
+                        <span class="q">'</span>
+                        <span class="p">, </span>
+                        <span class="q">'</span>
+                        <span class="s">giant</span>
+                        <span class="q">'</span>
+                        <span class="p">]</span>
+                    </div>
+                    <div class="chroma__code">
+                        <span class="v">last_bike </span>
+                        <span class="o">= </span>
+                        <span class="v">bikes</span>
+                        <span class="p">[</span>
+                        <span class="o">-</span>
+                        <span class="n">1</span>
+                        <span class="p">]</span>
+                    </div>
+                    <div class="chroma__code">
+                        <span class="f">print</span>
+                        <span class="p">(</span>
+                        <span class="v">last_bike</span>
+                        <span class="p">)</span>
+                    </div>
+                </code></pre>
+            </div>
+            <p class="list__paragraph">
+                Salida:
+            </p>
+            <div class="highlight">
+                <pre class="chroma"><code class="chroma__python">
+                    <div class="chroma__code">
+                        <span class="op">giant</span>
+                    </div>
+                </code></pre>
+            </div>
+            <p class="list__paragraph list__paragraph--italic">
+                (Antes de continuar, se recomienda leer sobre el <a class="list__link" href="#for-loop">bucle for</a> para entender cómo funciona el resto del código que se describe a continuación. Si no hablamos sobre el bucle for ahora es porque queremos llevar una secuencia ordenada sobre cada tema)
+            </p>
+            <h2 class="sub-caption">Recorrer una lista</h2>
+            <div class="highlight">
+                <pre class="chroma"><code class="chroma__python">
+                    <div class="chroma__code">
+                        <span class="v">bikes </span>
+                        <span class="o">= </span>
+                        <span class="p">[</span>
+                        <span class="q">'</span>
+                        <span class="s">trek</span>
+                        <span class="q">'</span>
+                        <span class="p">, </span>
+                        <span class="q">'</span>
+                        <span class="s">redline</span>
+                        <span class="q">'</span>
+                        <span class="p">, </span>
+                        <span class="q">'</span>
+                        <span class="s">giant</span>
+                        <span class="q">'</span>
+                        <span class="p">]</span>
+                    </div>
+                    <div class="chroma__code">
+                        <span class="k">for </span>
+                        <span class="v">bike </span>
+                        <span class="k">in </span>
+                        <span class="v">bikes</span>
+                        <span class="p">:</span>
+                    </div>
+                    <div class="chroma__code">
+                        <span class="f">    print</span>
+                        <span class="p">(</span>
+                        <span class="v">bike</span>
+                        <span class="p">)</span>
+                    </div>
+                </code></pre>
+            </div>
+            <p class="list__paragraph">
+                Salida:
+            </p>
+            <div class="highlight">
+                <pre class="chroma"><code class="chroma__python">
+                    <div class="chroma__code">
+                        <span class="op">trek</span>
+                    </div>
+                    <div class="chroma__code">
+                        <span class="op">redline</span>
+                    </div>
+                    <div class="chroma__code">
+                        <span class="op">giant</span>
+                    </div>
+                </code></pre>
+            </div>
+            <h2 class="sub-caption">Agregar un elemento a una lista</h2>
+            <div class="highlight">
+                <pre class="chroma"><code class="chroma__python">
+                    <div class="chroma__code">
+                        <span class="v">bikes </span>
+                        <span class="o">= </span>
+                        <span class="p">[]</span>
+                    </div>
+                    <div class="chroma__code">
+                        <span class="v">bikes</span>
+                        <span class="p">.</span>
+                        <span class="f">append</span>
+                        <span class="p">(</span>
+                        <span class="q">'</span>
+                        <span class="s">trek</span>
+                        <span class="q">'</span>
+                        <span class="p">)</span>
+                    </div>
+                    <div class="chroma__code">
+                        <span class="v">bikes</span>
+                        <span class="p">.</span>
+                        <span class="f">append</span>
+                        <span class="p">(</span>
+                        <span class="q">'</span>
+                        <span class="s">redline</span>
+                        <span class="q">'</span>
+                        <span class="p">)</span>
+                    </div>
+                    <div class="chroma__code">
+                        <span class="v">bikes</span>
+                        <span class="p">.</span>
+                        <span class="f">append</span>
+                        <span class="p">(</span>
+                        <span class="q">'</span>
+                        <span class="s">giant</span>
+                        <span class="q">'</span>
+                        <span class="p">)</span>
+                    </div>
+                    <div class="chroma__code">
+                        <span class="f">print</span>
+                        <span class="p">(</span>
+                        <span class="v">bikes</span>
+                        <span class="p">)</span>
+                    </div>
+                </code></pre>
+            </div>
+            <p class="list__paragraph">
+                Salida:
+            </p>
+            <div class="highlight">
+                <pre class="chroma"><code class="chroma__python">
+                    <div class="chroma__code">
+                        <span class="op">['trek', 'redline', 'giant']</span>
+                    </div>
+                </code></pre>
+            </div>
+            <h2 class="sub-caption">Crear una lista de números con la función range()</h2>
+            <div class="highlight">
+                <pre class="chroma"><code class="chroma__python">
+                    <div class="chroma__code">
+                        <span class="v">squares </span>
+                        <span class="o">= </span>
+                        <span class="p">[]</span>
+                    </div>
+                    <div class="chroma__code">
+                        <span class="k">for </span>
+                        <span class="v">x </span>
+                        <span class="k">in </span>
+                        <span class="f">range</span>
+                        <span class="p">(</span>
+                        <span class="n">1</span>
+                        <span class="p">, </span>
+                        <span class="n">11</span>
+                        <span class="p">)</span>
+                        <span class="p">:</span>
+                    </div>
+                    <div class="chroma__code">
+                        <span class="v">    squares</span>
+                        <span class="p">.</span>
+                        <span class="f">append</span>
+                        <span class="p">(</span>
+                        <span class="v">x </span>
+                        <span class="o">** </span>
+                        <span class="n">2</span>
+                        <span class="p">)</span>
+                    </div>
+                    <div class="chroma__code">
+                        <span class="f">print</span>
+                        <span class="p">(</span>
+                        <span class="v">squares</span>
+                        <span class="p">)</span>
+                    </div>
+                </code></pre>
+            </div>
+            <p class="list__paragraph">
+                Salida:
+            </p>
+            <div class="highlight">
+                <pre class="chroma"><code class="chroma__python">
+                    <div class="chroma__code">
+                        <span class="op">[1, 4, 9, 16, 25, 36, 49, 64, 81, 100]</span>
+                    </div>
+                </code></pre>
+            </div>
+            <h2 class="sub-caption">Lista de comprensiones</h2>
+            <p class="list__paragraph">
+                El enfoque descrito anteriormente para generar los cuadrados de la lista consistió en utilizar tres o cuatro líneas de código. Una lista de comprensión le permite generar esta misma lista en una sola línea de código. Una lista de comprensión combina el bucle for y la creación de nuevos elementos en una línea, y agrega automáticamente cada nuevo elemento a la lista.
+            </p>
+            <h3 class="list__caption">Sintaxis</h3>
+            <p class="list__paragraph">
+                newlist = [expression for item in iterable if condition == True]
+            </p>
+            <p class="list__paragraph">
+                Donde la condición es como un filtro que solo acepta los artículos que se valoran como True. El iterable puede ser cualquier objeto iterable, como una cadena, lista, tupla, conjunto, etc. Y la expresión es el elemento actual en la iteración, pero también es el resultado, que puede manipular antes de que termine como un elemento de la lista en la nueva lista:
+            </p>
+            <p class="list__paragraph">
+                El siguiente ejemplo crea la misma lista de números cuadrados que vio anteriormente, pero usa una lista de comprensión:
+            </p>
+            <div class="highlight">
+                <pre class="chroma"><code class="chroma__python">
+                    <div class="chroma__code">
+                        <span class="v">squares </span>
+                        <span class="o">= </span>
+                        <span class="p">[</span>
+                        <span class="v">value </span>
+                        <span class="o">** </span>
+                        <span class="n">2 </span>
+                        <span class="k">for </span>
+                        <span class="v">value </span>
+                        <span class="k">in </span>
+                        <span class="f">range</span>
+                        <span class="p">(</span>
+                        <span class="n">1</span>
+                        <span class="p">, </span>
+                        <span class="n">11</span>
+                        <span class="p">)]</span>
+                    </div>
+                    <div class="chroma__code">
+                        <span class="f">print</span>
+                        <span class="p">(</span>
+                        <span class="v">squares</span>
+                        <span class="p">)</span>
+                    </div>
+                </code></pre>
+            </div>
+            <p class="list__paragraph">
+                Salida:
+            </p>
+            <div class="highlight">
+                <pre class="chroma"><code class="chroma__python">
+                    <div class="chroma__code">
+                        <span class="op">[1, 4, 9, 16, 25, 36, 49, 64, 81, 100]</span>
+                    </div>
+                </code></pre>
+            </div>
+            <h2 class="sub-caption">Cortar una lista</h2>
+            <div class="highlight">
+                <pre class="chroma"><code class="chroma__python">
+                    <div class="chroma__code">
+                        <span class="v">finishers </span>
+                        <span class="o">= </span>
+                        <span class="p">[</span>
+                        <span class="q">'</span>
+                        <span class="v">sam</span>
+                        <span class="q">'</span>
+                        <span class="p">, </span>
+                        <span class="q">'</span>
+                        <span class="v">bob</span>
+                        <span class="q">'</span>
+                        <span class="p">, </span>
+                        <span class="q">'</span>
+                        <span class="v">ada</span>
+                        <span class="q">'</span>
+                        <span class="p">, </span>
+                        <span class="q">'</span>
+                        <span class="v">bea</span>
+                        <span class="q">'</span>
+                        <span class="p">]</span>
+                    </div>
+                    <div class="chroma__code">
+                        <span class="v">first_two </span>
+                        <span class="o">= </span>
+                        <span class="v">finishers</span>
+                        <span class="p">[</span>
+                        <span class="p">:</span>
+                        <span class="n">2</span>
+                        <span class="p">]</span>
+                    </div>
+                    <div class="chroma__code">
+                        <span class="f">print</span>
+                        <span class="p">(</span>
+                        <span class="v">first_two</span>
+                        <span class="p">)</span>
+                    </div>
+                </code></pre>
+            </div>
+            <p class="list__paragraph">
+                Salida:
+            </p>
+            <div class="highlight">
+                <pre class="chroma"><code class="chroma__python">
+                    <div class="chroma__code">
+                        <span class="op">['sam', 'bob']</span>
+                    </div>
+                </code></pre>
+            </div>
+            <h2 class="sub-caption">Copiar una lista</h2>
+            <div class="highlight">
+                <pre class="chroma"><code class="chroma__python">
+                    <div class="chroma__code">
+                        <span class="v">bikes </span>
+                        <span class="o">= </span>
+                        <span class="p">[</span>
+                        <span class="q">'</span>
+                        <span class="s">trek</span>
+                        <span class="q">'</span>
+                        <span class="p">, </span>
+                        <span class="q">'</span>
+                        <span class="s">redline</span>
+                        <span class="q">'</span>
+                        <span class="p">, </span>
+                        <span class="q">'</span>
+                        <span class="s">giant</span>
+                        <span class="q">'</span>
+                        <span class="p">]</span>
+                    </div>
+                    <div class="chroma__code">
+                        <span class="v">copy_of_bikes </span>
+                        <span class="o">= </span>
+                        <span class="v">bikes</span>
+                        <span class="p">[</span>
+                        <span class="p">:</span>
+                        <span class="p">]</span>
+                    </div>
+                    <div class="chroma__code">
+                        <span class="f">print</span>
+                        <span class="p">(</span>
+                        <span class="v">copy_of_bikes</span>
+                        <span class="p">)</span>
+                    </div>
+                </code></pre>
+            </div>
+            <p class="list__paragraph">
+                Salida:
+            </p>
+            <div class="highlight">
+                <pre class="chroma"><code class="chroma__python">
+                    <div class="chroma__code">
+                        <span class="op">['trek', 'redline', 'giant']</span>
+                    </div>
+                </code></pre>
+            </div>
+        </section>
+        <section class="main-section tuple container" id="tuple">
+            <header class="caption">Tupla</header>
+            <p class="tuple__paragraph">
+                Las tuplas son similares a las listas, pero los elementos de una tupla no se pueden modificar.
+            </p>
+            <h2 class="sub-caption">Crear una tupla</h2>
+            <div class="highlight">
+                <pre class="chroma"><code class="chroma__python">
+                    <div class="chroma__code">
+                        <span class="v">dimensions </span>
+                        <span class="o">= </span>
+                        <span class="p">(</span>
+                        <span class="n">1920</span>
+                        <span class="p">, </span>
+                        <span class="n">1080</span>
+                        <span class="p">)</span>
+                    </div>
+                    <div class="chroma__code">
+                        <span class="f">print</span>
+                        <span class="p">(</span>
+                        <span class="v">dimensions</span>
+                        <span class="p">)</span>
+                    </div>
+                </code></pre>
+            </div>
+            <p class="tuple__paragraph">
+                Salida:
+            </p>
+            <div class="highlight">
+                <pre class="chroma"><code class="chroma__python">
+                    <div class="chroma__code">
+                        <span class="op">(1920, 1080)</span>
+                    </div>
+                </code></pre>
+            </div>
+            <p class="tuple__paragraph tuple__paragraph--italic">
+                Las tuplas se definen técnicamente por la presencia de una coma; los paréntesis hacen que se vean más prolijos y legibles. Si desea definir una tupla con un elemento, debe incluir una coma al final:
+            </p>
+        </section>
+        <section class="main-section if-statement container" id="if-statement">
+            <header class="caption">Declaración If</header>
+            <p class="if-statement__paragraph">
+                Las declaraciones if se utilizan para probar condiciones particulares y responder de manera apropiada.
+            </p>
+            <h2 class="sub-caption">Pruebas condicionales</h2>
+            <div class="if-statement__flex">
+                <article class="if-statement__items">
+                    <p class="if-statement__item">Igual</p>
+                    <p class="if-statement__item if-statement__item--red">x == 42</p>
+                </article>
+                <article class="if-statement__items">
+                    <p class="if-statement__item">No es igual</p>
+                    <p class="if-statement__item if-statement__item--red">x != 42</p>
+                </article>
+                <article class="if-statement__items">
+                    <p class="if-statements__item">Mayor que</p>
+                    <p class="if-statements__item if-statement__item--red">x > 42</p>
+                </article>
+                <article class="if-statement__items">
+                    <p class="if-statements__item">Mayor o igual que</p>
+                    <p class="if-statements__item if-statement__item--red">x >= 42</p>
+                </article>
+                <article class="if-statement__items">
+                    <p class="if-statements__item">Menor que </p>
+                    <p class="if-statements__item if-statement__item--red">x < 42</p>
+                </article>
+                <article class="if-statement__items">
+                    <p class="if-statements__item">Menor o igual que</p>
+                    <p class="if-statements__item if-statement__item--red">x <= 42</p>
+                </article>
+            </div>
+            <h2 class="sub-caption">Una simple prueba condicional if</h2>
+            <p class="if-statement__paragraph"></p>
+            
+            <p class="if-statement__paragraph"></p>            
+        </section>
     </main>
 </body>
 </html>
