@@ -6,14 +6,36 @@
     box-sizing: border-box;
 }
 
+p {
+    margin-bottom: 20px;
+}
+
+span {
+    font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
 a {
     text-decoration: none;
+}
+
+a:hover {
+    color: #f00;
+}
+
+li {
+    line-height: 1.7;
+}
+
+ul {
+    margin-bottom: 20px;
 }
 
 /* Nav top */
 
 .nav--top {
     position: fixed;
+    top: 0;
+    left: 0;
     background: #1858ad;
     width: 100vw;
     height: 4rem;
@@ -31,10 +53,11 @@ a {
 .nav__icon {
     height: 100%;
     width: auto;
+    image-rendering: pixelated;
 }
 
 .title {
-    font-size: 25px;
+    font-size: 30px;
     color: #fff;
     font-weight: 600;
     padding: 0 16px;
@@ -59,6 +82,7 @@ a {
 }
 
 .nav__items {
+    margin-bottom: 0;
     padding: 0;
     overflow-y: scroll;
     height: 80%;
@@ -68,26 +92,68 @@ a {
     list-style: none;
     font-size: 18px;
     padding: 0.50rem 1.5rem;
+    line-height: 0;
     border-top: 1px solid #0000001a;
 }
 
-
+ /* Main content */
+main {
+    padding-top: 1rem;
+    padding-bottom: 4rem;
+}
 
 section {
     margin: 0 250px 0 300px;
 }
 
-span {
-    font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+/* Captions */
+
+.caption {
+    font-size: 30px;
+    font-weight: 700;
+    padding-top: 4rem;
+    margin-bottom: 16px;
+    text-align: left;
 }
 
+.sub-caption {
+    line-height: 2;
+}
+
+/* Tables */
+
+.data-types__table,
+.if-statement__table {
+    overflow: auto;
+}
+
+.data-types__items,
+.if-statement__items {
+    display: flex;
+    margin: 0 20px;
+    padding: 0 16px;
+}
+
+.data-types__item,
+.if-statement__item {
+    min-width: 200px;
+}
+
+/* Italic pragraph */
+
+.list__paragraph--italic,
+.tuple__paragraph--italic {
+    font-style: italic;
+    font-weight: 500;
+}
 
 /* Code color */
 
 .highlight {
     background: #f5f6fa;
-    margin: 10px 20px;
-    padding: 12px;
+    margin: 16px 20px;
+    padding: 16px;
+    overflow-y: auto;
 }
 
 .p{
@@ -129,7 +195,14 @@ span {
 .highlight--border-red {
     border: 2px solid #c82c32;
 }
-
+.data-types__item--blue,
 .if-statement__item--blue {
     color: #1858ad;
+}
+
+/* Last paragraph of sections */
+
+.last {
+    margin-bottom: 0;
+    padding-bottom: 0;
 }

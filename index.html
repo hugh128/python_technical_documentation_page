@@ -87,7 +87,7 @@
                 <li class="intro__item">Python usa nuevas líneas para completar un comando, a diferencia de otros lenguajes de programación que a menudo usan punto y coma o paréntesis.</li>
                 <li class="intro__item">Python se basa en la sangría, usando espacios en blanco, para definir el alcance; como el alcance de los bucles, funciones y clases. Otros lenguajes de programación a menudo usan corchetes para este propósito.</li>
             </ul>
-            <p class="intro__paragraph">
+            <p class="intro__paragraph last">
                 Python es un gran lenguaje para aprender, ¡así que comencemos!
             </p>
         </section>
@@ -113,22 +113,19 @@
                 Primero, verifique si Python está instalado en su sistema. Abra una ventana de terminal en <strong>Windows</strong> ingresando <strong>command</strong> (o <strong>terminal</strong>) en el menú Inicio y presione <strong>enter</strong> en la aplicación que aparece o presione la combinación de teclas <strong>Windows + r</strong>, y en la ventana que aparece escriba <strong>cmd</strong> y presione <strong>enter</strong>; en <strong>Mac</strong> abra una ventana de terminal yendo a <strong>Applications > Utilities > Terminal</strong>, también puede presionar la tecla <strong>Command</strong>, y escribir <strong>terminal</strong> y luego presionar <strong>Intro</strong>; en <strong>Linux</strong> abra una ventana de terminal ejecutando la aplicación <strong>Terminal</strong> en su sistema (en Ubuntu, puede presionar ctrl-alt-T).
             </p>
             <p class="get-started__paragraph">
-                En la ventana de terminal, ingrese <strong>python</strong> en minúsculas en Windows y Mac (en Linux escriba python3). Si obtiene un indicador de Python (>>>) como respuesta, Python está instalado en su sistema. Si ve un mensaje de error que indica que Python no es un comando reconocido, Python no está instalado.
+                En la ventana de terminal, ingrese <strong>python</strong> en minúsculas en Windows y Mac (en Linux escriba python3). Si obtiene un indicador de Python <strong>(>>>)</strong> como respuesta, Python está instalado en su sistema. Si ve un mensaje de error que indica que Python no es un comando reconocido, Python no está instalado.
             </p>
             <p class="get-started__paragraph">
                 En ese caso, o si ve una versión de Python anterior a Python 3, debe descargar un instalador de Python desde la página oficial. Vaya a la <a class="get-started__link" href="https://www.python.org/" target="_blank">página oficial de Python</a> y coloque el cursor sobre <strong>Downloads</strong>. Debería ver un botón para descargar la última versión de Python. Haz clic en el botón, que debería comenzar a descargar automáticamente el instalador correcto para su sistema.                        
             </p>
-            <p class="get-started__paragraph">
+            <p class="get-started__paragraph last">
                 Una vez que haya descargado el archivo, ejecute el instalador. Asegúrese de seleccionar la opción <strong>Add Python to PATH</strong>, lo que facilitará la configuración correcta de su sistema, y presione en <strong>Install now</strong>.
             </p>
         </section>
         <section class="main-section start container" id="Iniciar_con_Python_(Hola,_Mundo!)">
             <header class="caption">Iniciar con Python (Hola, Mundo!)</header>
             <p class="start__paragraph">
-                Una vez instalado Python en su sistema, abra la terminal de Python y escriba su primer programa.
-            </p>
-            <p class="start__paragraph">
-                Ingrese la siguiente línea en su sesión de Python y asegúrese de ver el resultado: Hello, World!
+                Una vez instalado Python en su sistema, abra la terminal de Python y escriba su primer programa. Ingrese la siguiente línea en su sesión de Python y asegúrese de ver el resultado: Hello, World!
             </p>
 <div class="highlight highlight--terminal"><pre class="chroma"><code class="chroma__python"><span class="t">>>> print ("Hello, World!")</span>
 <span class="t">Hello, World!</span>
@@ -202,7 +199,7 @@
             <p class="start__paragraph">
                 Salida:
             </p>
-<div class="highlight"><pre class="chroma"><code class="chroma__python"><span class="op">Hello, World!</span></code></pre></div>
+<div class="highlight last"><pre class="chroma"><code class="chroma__python"><span class="op">Hello, World!</span></code></pre></div>
         </section>
         <section class="main-section variables container" id="Variables">
             <header class="caption">Variables</header>
@@ -249,7 +246,7 @@
                 Una constante es como una variable cuyo valor permanece igual durante la vida de un programa. Python no tiene tipos de constantes incorporados, pero los programadores de Python usan todas las letras mayúsculas para indicar que una variable debe tratarse como una constante y nunca cambiarse:
             </p>
 <div class="highlight"><pre class="chroma"><code class="chroma__python"><span class="v">MAX_CONNECTIONS </span><span class="o">= </span><span class="n">5000</span></code></pre></div>            
-            <p class="variables__paragraph">
+            <p class="variables__paragraph last">
                 Cuando desee tratar una variable como una constante en su código, haga que el nombre de la variable sea todo en mayúsculas.
             </p>
         </section>
@@ -257,30 +254,30 @@
             <header class="caption">Tipos de datos de Python</header>
             <p class="data-types__paragraph">Las variables pueden almacenar datos de diferentes tipos y diferentes tipos pueden hacer cosas diferentes.</p>
             <p class="data-types__paragraph">Python tiene los siguientes tipos de datos integrados de forma predeterminada, los más importantes son:</p>
-            <div class="data-types__flex">
+            <div class="data-types__table">
                 <article class="data-types__items">
-                    <p class="data_types__item">Tipo de texto:</p>
-                    <p class="data_types__item data_types__item--blue">str</p>
+                    <p class="data-types__item">Tipo de texto:</p>
+                    <p class="data-types__item data-types__item--blue">str</p>
                 </article>
                 <article class="data-types__items">
-                    <p class="data_types__item">Tipos numéricos:</p>
-                    <p class="data_types__item data_types__item--blue">int, float, complex</p>
+                    <p class="data-types__item">Tipos numéricos:</p>
+                    <p class="data-types__item data-types__item--blue">int, float, complex</p>
                 </article>
                 <article class="data-types__items">
-                    <p class="data_types__item">Tipos de secuencia:</p>
-                    <p class="data_types__item data_types__item--blue">list, tuple, range</p>                    
+                    <p class="data-types__item">Tipos de secuencia:</p>
+                    <p class="data-types__item data-types__item--blue">list, tuple, range</p>                    
                 </article>
                 <article class="data-types__items">
-                    <p class="data_types__item">Tipo de mapeo:	</p>
-                    <p class="data_types__item data_types__item--blue">dict</p>
+                    <p class="data-types__item">Tipo de mapeo:	</p>
+                    <p class="data_types__item data-types__item--blue">dict</p>
                 </article>
                 <article class="data-types__items">
-                    <p class="data_types__item">Tipos de conjuntos:</p>
-                    <p class="data_types__item data_types__item--blue">set, frozenset</p>                    
+                    <p class="data-types__item">Tipos de conjuntos:</p>
+                    <p class="data_types__item data-types__item--blue">set, frozenset</p>                    
                 </article>
                 <article class="data-types__items">
-                    <p class="data_types__item">Binary Types:</p>
-                    <p class="data_types__item data_types__item--blue">bytes, bytearray, memoryview</p>
+                    <p class="data-types__item">Binary Types:</p>
+                    <p class="data_types__item data-types__item--blue">bytes, bytearray, memoryview</p>
                 </article>
                 <article class="data-types__items"></article>
             </div>
@@ -312,8 +309,8 @@
                 <li class="data-types__operator">Operadores de membresía</li>
                 <li class="data-types__operator">Operadores bit a bit</li>
             </ul>
-            <p class="data-types__paragraph">
-                Consulte en w3schools.com los detalles de cada <a class="data-types__link" href="https://www.w3schools.com/python/python_operators.asp" target="_blank">operador</a> y su función. 
+            <p class="data-types__paragraph last">
+                Consulte en w3schools.com los detalles de cada <a class="data-types__link" href="https://www.w3schools.com/python/python_operators.asp" target="_blank">operador y su función</a>. 
             </p>
         </section>
         <section class="main-section numbers container" id="Números_en_Python_(int_y_float)">
@@ -322,7 +319,7 @@
                 Los números se utilizan con bastante frecuencia en la programación para llevar la puntuación en los juegos, representar datos en visualizaciones, almacenar información en aplicaciones web, etc. Python trata los números de varias formas diferentes, según cómo se utilicen. Veamos primero cómo Python gestiona los números enteros (o <strong>int</strong>), porque son los más sencillos de trabajar.
             </p>
             <h3 class="sub-caption">Enteros (int)</h3>
-            <p class="numbers__paragraph">
+            <p class="numbers__paragraph last">
                 Puede sumar (+), restar (-), multiplicar (*), dividir (/) y elevar (**) enteros en Python. Además, es posible realizar otras operaciones con % (operador de modulo) y // (división de piso).
             </p>
 <div class="highlight highlight--terminal"><pre class="chroma"><code class="chroma__python"><span class="t">>>> 2 + 3</span>
@@ -373,7 +370,7 @@
                 Estas cadenas se llaman f-strings y se utilizan para formatear cadenas (en otras palabras, para mostrar las variables en pantalla con una llamada a la función print) La f es para formato, porque Python formatea la cadena reemplazando el nombre de cualquier variable entre llaves con su valor. La salida del código anterior es:
             </p>
 <div class="highlight"><pre class="chroma"><code class="chroma__python"><span class="op">albert einstein</span></code></pre></div>
-            <p class="strings__paragraph">
+            <p class="strings__paragraph last">
                 Las f-string se introdujeron por primera vez en Python 3.6. Si está utilizando Python 3.5 o una versión anterior, deberá utilizar el método format () en lugar de esta sintaxis f. Para usar format (), enumere las variables que desea usar en la cadena dentro del siguiente formato entre paréntesis. Cada variable se denomina mediante un conjunto de llaves; las llaves se completarán con los valores enumerados entre paréntesis en el orden proporcionado:
             </p>
         </section>
@@ -415,7 +412,7 @@
             </p>
 <div class="highlight"><pre class="chroma"><code class="chroma__python"><span class="op">giant</span></code></pre></div>
             <p class="list__paragraph list__paragraph--italic">
-                (Antes de continuar, se recomienda leer sobre el <a class="list__link" href="#for-loop">bucle for</a> para entender cómo funciona el resto del código que se describe a continuación. Si no hablamos sobre el bucle for ahora es porque queremos llevar una secuencia ordenada sobre cada tema)
+                (Antes de continuar se recomienda leer sobre el <a class="list__link" href="#Blucle_for">bucle for</a> para entender cómo funciona el resto del código que se describe a continuación. Si no hablamos sobre el bucle for ahora es porque queremos llevar una secuencia ordenada sobre cada tema)
             </p>
             <h3 class="sub-caption">Recorrer una lista</h3>
 <div class="highlight"><pre class="chroma"><code class="chroma__python"><span class="v">bikes </span><span class="o">= </span><span class="p">[</span><span class="q">'</span><span class="s">trek</span><span class="q">'</span><span class="p">, </span><span class="q">'</span><span class="s">redline</span><span class="q">'</span><span class="p">, </span><span class="q">'</span><span class="s">giant</span><span class="q">'</span><span class="p">]</span>
@@ -479,7 +476,7 @@
             <p class="list__paragraph">
                 Salida:
             </p>
-<div class="highlight"><pre class="chroma"><code class="chroma__python"><span class="op">['trek', 'redline', 'giant']</span></code></pre></div>
+<div class="highlight last"><pre class="chroma"><code class="chroma__python"><span class="op">['trek', 'redline', 'giant']</span></code></pre></div>
         </section>
         <section class="main-section tuple container" id="Tupla">
             <header class="caption">Tupla</header>
@@ -493,7 +490,7 @@
                 Salida:
             </p>
 <div class="highlight"><pre class="chroma"><code class="chroma__python"><span class="op">(1920, 1080)</span></code></pre></div>
-            <p class="tuple__paragraph tuple__paragraph--italic">
+            <p class="tuple__paragraph tuple__paragraph--italic last">
                 Las tuplas se definen técnicamente por la presencia de una coma; los paréntesis hacen que se vean más prolijos y legibles. Si desea definir una tupla con un elemento, debe incluir una coma al final:
             </p>
         </section>
@@ -503,7 +500,7 @@
                 Las declaraciones if se utilizan para probar condiciones particulares y responder de manera apropiada.
             </p>
             <h3 class="sub-caption">Pruebas condicionales</h3>
-            <div class="if-statement__flex">
+            <div class="if-statement__table">
                 <article class="if-statement__items">
                     <p class="if-statement__item">Igual</p>
                     <p class="if-statement__item if-statement__item--blue">x == 42</p>
@@ -513,20 +510,20 @@
                     <p class="if-statement__item if-statement__item--blue">x != 42</p>
                 </article>
                 <article class="if-statement__items">
-                    <p class="if-statements__item">Mayor que</p>
+                    <p class="if-statement__item">Mayor que</p>
                     <p class="if-statements__item if-statement__item--blue">x > 42</p>
                 </article>
                 <article class="if-statement__items">
-                    <p class="if-statements__blue">Mayor o igual que</p>
-                    <p class="if-statements__item if-statement__item--blue">x >= 42</p>
+                    <p class="if-statement__item">Mayor o igual que</p>
+                    <p class="if-statement__item if-statement__item--blue">x >= 42</p>
                 </article>
                 <article class="if-statement__items">
-                    <p class="if-statements__blue">Menor que </p>
-                    <p class="if-statements__item if-statement__item--blue">x < 42</p>
+                    <p class="if-statement__item">Menor que</p>
+                    <p class="if-statement__item if-statement__item--blue">x < 42</p>
                 </article>
                 <article class="if-statement__items">
-                    <p class="if-statements__blue">Menor o igual que</p>
-                    <p class="if-statements__item if-statement__item--blue">x <= 42</p>
+                    <p class="if-statement__item">Menor o igual que</p>
+                    <p class="if-statement__item if-statement__item--blue">x <= 42</p>
                 </article>
             </div>
             <h3 class="sub-caption">Una simple prueba condicional if</h3>
@@ -541,7 +538,7 @@
             <h3 class="sub-caption">Declaraciones If-elif-else</h3>
             <p class="if-statement__paragraph">La palabra clave elif es la forma que tiene Python de decir "si las condiciones anteriores no eran verdaderas, prueba esta condición". Se pueden utilizar tantas declaraciones elif como se deseen.</p>
             <p class="if-statement__paragraph">La instrucción else le permite definir una acción o un conjunto de acciones que se ejecutan cuando falla la prueba condicional (cuando fallan las declaraciones if y/o elif).</p>
-<div class="highlight"><pre class="chroma"><code class="chroma__python"><span class="k">if </span><span class="v">age </span><span class="o">< </span><span class="n">4</span><span class="p">:</span>
+<div class="highlight last"><pre class="chroma"><code class="chroma__python"><span class="k">if </span><span class="v">age </span><span class="o">< </span><span class="n">4</span><span class="p">:</span>
 <span class="">    ticket_price </span><span class="k">= </span><span class="n">0</span>
 <span class="k">elif </span><span class="v">age </span><span class="o">< </span><span class="n">18</span><span class="p">:</span>
 <span class="">    ticket_price </span><span class="k">= </span><span class="n">10</span>
@@ -608,13 +605,13 @@
             <p class="dictionary__paragraph">
                 Salida
             </p>
-<div class="highlight"><pre class="chroma"><code class="chroma__python"><span class="op">17 is a favorite</span>
+<div class="highlight last"><pre class="chroma"><code class="chroma__python"><span class="op">17 is a favorite</span>
 <span class="op">4 is a favorite</span></code></pre></div>
         </section>
         <section class="main-section for-loop container" id="Blucle_for">
             <header class="caption">Blucle for</header>
             <p class="for-loop__paragraph">
-                Un bucle for se utiliza para iterar (repetir un proceso) sobre una secuencia (que es una lista, una tupla, un diccionario, un conjunto o una cadena).
+                Un bucle for se utiliza para iterar (repetir un proceso) sobre una secuencia (una lista, una tupla, un diccionario, un conjunto o una cadena).
             </p>
 <div class="highlight"><pre class="chroma"><code class="chroma__python"><span class="v">fruits </span><span class="k">= </span><span class="p">[</span><span class="q">'</span><span class="s">apple</span><span class="q">'</span><span class="p">, </span><span class="q">'</span><span class="s">banana</span><span class="q">'</span><span class="p">, </span><span class="q">'</span><span class="s">cherry</span><span class="q">'</span><span class="p">]</span>
 <span class="k">for </span><span class="v">x </span><span class="k">in </span><span class="v">fruits</span><span class="p">:</span>
@@ -633,7 +630,7 @@
                 Esta línea le dice a Python que recupere el primer valor de la lista de frutas y lo asocie con la variable x. Este primer valor es "apple". Python luego lee la siguiente línea:
             </p>
 <div class="highlight"><pre class="chroma"><code class="chroma__python"><span class="f">print</span><span class="p">(</span><span class="f">x</span><span class="p">)</span></code></pre></div>
-            <p class="for-loop__paragraph">
+            <p class="for-loop__paragraph last">
                 Python imprime el valor actual de x, que sigue siendo 'apple'. Debido a que la lista contiene más valores, Python regresa a la primera línea del ciclo y repite el mismo proceso. En la segunda iteración del ciclo for, Python recupera el segundo valor de la lista que es “banana” y lo almacena en la variable x, luego imprime el valor de x, que es “banana” en esta iteración, y repite el mismo proceso de nuevo para el resto de los elementos de la lista hasta que no haya más elementos en la lista.
             </p>
         </section>
@@ -664,7 +661,7 @@
                 Salida
             </p>
 <div class="highlight"><pre class="chroma"><code class="chroma__python"><span class="op">How old are you? </span></code></pre></div>
-            <p class="input__paragraph">
+            <p class="input__paragraph last">
                 En el ejemplo anterior la segunda línea del código convierte el valor ingresado por el usuario a un tipo de dato int. Esto se hace porque, como se mencionó anteriormente, toda entrada a través de la función input se almacena como una cadena.
             </p>
         </section>
@@ -691,7 +688,7 @@
 <span class="k">while </span><span class="v">msg </span><span class="o">!= </span><span class="q">'</span><span class="s">quit</span><span class="q">'</span><span class="p">:</span>
 <span class="v">    msg </span><span class="o">= </span><span class="f">input</span><span class="p">(</span><span class="q">"</span><span class="s">What's your message? </span><span class="q">"</span><span class="p">)</span>
 <span class="f">    print</span><span class="p">(</span><span class="v">msg</span><span class="p">)</span></code></pre></div>
-            <p class="while-loop__paragraph">
+            <p class="while-loop__paragraph last">
                 El código anterior indica al usuario que ingrese un mensaje y muestra ese mensaje en pantalla. El código deja de ejecutarse cuando el usuario ingresa la palabra <strong>quit</strong>.
             </p>
         </section>
@@ -754,7 +751,7 @@
             <p class="dictionary__paragraph">
                 Salida
             </p>
-<div class="highlight"><pre class="chroma"><code class="chroma__python"><span class="op">8</span></code></pre></div>
+<div class="highlight last"><pre class="chroma"><code class="chroma__python"><span class="op">8</span></code></pre></div>
         </section>
         <section class="main-section zen-python container" id="Zen_de_Python">
             <header class="caption">Zen de Python</header>
@@ -771,7 +768,7 @@
             <p class="zen-python__paragraph">
                 Aquí se comparten algunas líneas para ayudarlo a comprender por qué deberían ser importantes para usted como programador principiante de Python.
             </p>
-            <ul class="zen-python__items">
+            <ul class="zen-python__items last">
                 <li class="zen-python__item">Bello es mejor que feo.</li>
                 <li class="zen-python__item">Simple es mejor que complejo.</li>
                 <li class="zen-python__item">Espaciado es mejor que denso.</li>
