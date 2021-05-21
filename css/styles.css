@@ -21,16 +21,7 @@ span {
 .highlight {
     background: #f5f6fa;
     margin: 10px 20px;
-}
-
-.chroma__python {
-    display: flex;
-    flex-direction: column;
-    padding: 15px;
-}
-
-.chroma__code {
-    display: flex;
+    padding: 12px;
 }
 
 .p{
@@ -71,4 +62,8 @@ span {
 
 .highlight--border-red {
     border: 2px solid #c82c32;
+}
+
+.if-statement__item--blue {
+    color: #1858ad;
 }
