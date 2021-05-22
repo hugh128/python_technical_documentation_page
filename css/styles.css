@@ -331,7 +331,7 @@ section {
     }
 
     .chroma {
-        padding-bottom: 0.6rem;
+        padding: 0.6rem 0;
     }
 }
 
