@@ -286,15 +286,22 @@ section {
     }
 
     .nav__items {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         width: 100%;
         height: 89%;
-        border-bottom: 1px solid #0000001a;
     }
 
     .nav__item {
         font-size: 18px;
         padding: 0.40rem 0;
         margin: 0 1.5rem;
+    }
+
+    .nav__item--br-bottom {
+        border-bottom: 1px solid #0000001a;
     }
 
     main {
