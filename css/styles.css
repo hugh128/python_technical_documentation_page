@@ -237,7 +237,7 @@ section {
 
     p,
     li {
-        max-width: 80%;
+        width: 82%;
     }
 
     .highlight {
@@ -251,7 +251,7 @@ section {
 
 @media screen and (max-width: 990px) {
     p, li {
-        max-width: 95%;
+        width: 90%;
     }
 
     .nav--left {
@@ -303,7 +303,7 @@ section {
     }
 
     section {
-        margin: 0 1rem 0 1rem;
+        margin: 0 1.5rem 0 1.5rem;
     }
 
     .caption {
@@ -316,7 +316,7 @@ section {
     }
 
     .highlight {
-        width: 95%;
+        width: 94%;
     }
 }
 
@@ -333,7 +333,8 @@ section {
     }
 
     .highlight {
-        width: 92%;
+        width: 100%;
+        margin: 1rem 0;
     }
 }
 
@@ -343,7 +344,7 @@ section {
         padding: 0;
     }
 
-    .highlight {
-        width: 90%;
+    section {
+        margin: 0 1rem 0 1rem;
     }
 }
