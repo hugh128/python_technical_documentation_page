@@ -173,8 +173,11 @@ section {
     background: #f5f6fa;
     margin: 1rem 1.25rem;
     padding: 1rem;
-    overflow-y: auto;
     width: 95%;
+}
+
+.chroma {
+    overflow: auto;
 }
 
 .p{
@@ -283,6 +286,7 @@ section {
 
     .nav__title {
         font-size: 25px;
+        padding: 0.625rem 0;
     }
 
     .nav__items {
@@ -305,7 +309,7 @@ section {
     }
 
     main {
-        padding-top: 3.5rem;
+        padding-top: 3rem;
         padding-bottom: 2rem;
     }
 
@@ -325,6 +329,10 @@ section {
     .highlight {
         width: 94%;
     }
+
+    .chroma {
+        padding-bottom: 0.6rem;
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -339,19 +347,23 @@ section {
         right: 10px;
     }
 
+    .title {
+        font-size: 25px;
+        padding: 1rem;
+    }
+
     .highlight {
         width: 100%;
         margin: 1rem 0;
     }
 }
 
-@media screen and (max-width: 350px) {
-    .title {
-        font-size: 25px;
-        padding: 0;
-    }
-
+@media screen and (max-width: 391px) {
     section {
         margin: 0 1rem 0 1rem;
+    }
+
+    .title {
+        padding: 0.3125rem;
     }
 }
